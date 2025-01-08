@@ -1,0 +1,44 @@
+
+:root {
+    --hero-height: 60vh;
+    --hero-max-height: 700px;
+  }
+
+@font-face {
+  font-family: "LilitaOne";
+  src: url("./Fonts/LilitaOne-Regular.ttf");
+}
+
+.Hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: min(100% - 5rem, var(--container-max, 120ch));
+    margin: auto;
+    margin-top: 2rem;
+    
+    background-color: wheat;
+    height: var(--hero-height);
+    max-height: var(--hero-max-height);
+}
+
+.Hero img {
+        object-fit: cover;
+        height: min(var(--hero-height), var(--hero-max-height));
+        width: min(var(--hero-height), var(--hero-max-height));
+        border-radius: 100%;
+}
+
+.box {
+
+  text-align: left;
+  flex-grow: 0.8;
+
+  margin: 3rem;
+}
+
+.box h1 {
+  font-family: "LilitaOne", sans-serif;
+  font-size: 3rem;
+}
