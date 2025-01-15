@@ -81,7 +81,7 @@
     height: fit-content;
     margin: auto;
     
-    background-color: var(--mimi-pink);
+    background-color: rgb(253, 229, 244);
 }
 
 .Hero img {
@@ -123,4 +123,5 @@
 
 .box p {
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--rose-pompadour);
 }
