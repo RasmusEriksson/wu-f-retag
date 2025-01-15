@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lager_1" data-name="Lager 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 505.11 222.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #639b30;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-6 {
+        fill: none;
+        stroke: #d560a0;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+      }
+
+      .cls-2 {
+        fill: #9dc977;
+      }
+
+      .cls-3 {
+        fill: #d461a0;
+      }
+
+      .cls-7 {
+        fill: #1d1d1b;
+        font-family: Brevia-BoldItalic, Brevia;
+        font-size: 174.66px;
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        fill: #e4a4ca;
+      }
+
+      .cls-5 {
+        fill: #e5a4ca;
+      }
+    </style>
+  </defs>
+  <path class="cls-4" d="M259.33,39.05L294.54.68c1.32-1.44,3.71-.42,3.59,1.52l-4.04,66.77-34.76-29.92Z"/>
+  <circle class="cls-5" cx="243.2" cy="95.22" r="62.25"/>
+  <path class="cls-6" d="M225.73,107.18c10.61,12.42,21.15,21.71,26.82,17.61,7.36-5.32,1.73-29.68,8.62-32.17,7.07-2.56,17.43,21.4,25.15,19.66,3.77-.85,7.15-7.88,6.52-33.09"/>
+  <text class="cls-7" transform="translate(0 170.72)"><tspan x="0" y="0" xml:space="preserve">G    br</tspan></text>
+  <circle class="cls-3" cx="279.93" cy="64.75" r="8.53"/>
+  <circle class="cls-3" cx="222.16" cy="88.85" r="8.53"/>
+  <circle class="cls-2" cx="175.45" cy="137.52" r="47.58"/>
+  <circle class="cls-1" cx="164.38" cy="149.95" r="22.45"/>
+  <circle class="cls-1" cx="145.3" cy="119.14" r="6.12"/>
+  <circle class="cls-1" cx="204.4" cy="141.63" r="6.12"/>
+  <path class="cls-4" d="M185.65,83.02l-33.54-37.63c-1.67-1.87-.06-4.8,2.41-4.4l64.38,10.44-33.25,31.58Z"/>
+</svg>
