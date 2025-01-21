@@ -22,23 +22,31 @@
 
 .TopBar {
   height: 6rem;
+  width: 100%;
   background-color: var(--mimi-pink);
   display: flex;
+  align-content: center;
   justify-content: space-between;
-  align-items: center;
+  
   
 }
 
 .TopBar ul {
   list-style: none;
   display: flex;
-  
+}
+
+.TopBar ul li a img {
+  fill: white;
+
 }
 
 .TopBar img {
   height: 5rem;
-  justify-self: center;
+}
 
+.empty {
+  width: 15%;
 }
 
 .NavBar {
@@ -91,7 +99,7 @@
     align-items: center;
     flex-wrap: wrap;
     
-    width: min(100% - 0rem, var(--container-max, 100ch));
+    width: min(80% - 0rem, var(--container-max, 100ch));
     height: fit-content;
     margin: auto;
     
