@@ -25,8 +25,10 @@
   width: 100%;
   background-color: var(--mimi-pink);
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
   
   
 }
@@ -34,24 +36,31 @@
 .TopBar ul {
   list-style: none;
   display: flex;
+  justify-content: flex-end;
+  width: 30%;
+  margin-right: 1rem;
 }
 
 .TopBar ul li a img {
-  fill: white;
+  color: white;
+  width: 50%;
 
 }
 
 .TopBar img {
   height: 5rem;
+  width: 30%;
 }
 
 .empty {
-  width: 15%;
+  width: 30%;
 }
 
 .NavBar {
   height: 4rem;
   background-color: var(--dark-slate-gray);
+  position: sticky;
+  top: 6rem;
 }
 
 .NavBar ul {
@@ -162,4 +171,42 @@
 .box p {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--rose-pompadour);
+}
+
+
+
+.infopage {
+  width: min(80% - 0rem, var(--container-max, 100ch));
+  margin-inline: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: var(--mimi-pink);
+}
+
+.infopage img {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .empty {
+    display: none;
+  }
+  .TopBar img {
+    margin-left: 1rem;
+    width: 40%;
+  }
+  .TopBar {
+    height: 4rem;
+  }
+  .TopBar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    margin-right: 1rem;
+  }
+
+  .NavBar {
+    top: 4rem;
+  }
 }
