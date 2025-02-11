@@ -151,11 +151,60 @@
 
 
 
+.Colors {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin-inline: auto;
+  margin-block: 2rem;
+}
+
+.ColorBox {
+  aspect-ratio: 1/1;
+  width: 20%;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color1 {
+  background-color: var(--rose-pompadour);
+}
+
+.color1 p {
+  color: white;
+}
+
+.color2 {
+  background-color: var(--mimi-pink);
+}
+.color3 {
+  background-color: var(--dark-slate-gray);
+}
+
+.color3 p {
+  color: var(--mimi-pink);
+}
+
+.color4 {
+  background-color: white;
+}
 
 
+.image_box {
+  width: min(80% - 0rem, var(--container-max, 100ch));
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
 
-
-
+.image_box img {
+  max-width: 40%;
+  width: auto;
+  height: auto;
+}
 
 
 .page {
