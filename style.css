@@ -8,6 +8,15 @@
     --amaranth-pink: #ea9ab2ff;
     --mimi-pink: #efcfe3ff;
     --dark-slate-gray: #254441ff;
+
+    --step--2: clamp(0.7813rem, 0.7747rem + 0.0326cqi, 0.8rem);
+    --step--1: clamp(0.9375rem, 0.9158rem + 0.1087cqi, 1rem);
+    --step-0: clamp(1.125rem, 1.0815rem + 0.2174cqi, 1.25rem);
+    --step-1: clamp(1.35rem, 1.2761rem + 0.3696cqi, 1.5625rem);
+    --step-2: clamp(1.62rem, 1.5041rem + 0.5793cqi, 1.9531rem);
+    --step-3: clamp(1.944rem, 1.771rem + 0.8651cqi, 2.4414rem);
+    --step-4: clamp(2.3328rem, 2.0827rem + 1.2504cqi, 3.0518rem);
+    --step-5: clamp(2.7994rem, 2.4462rem + 1.7658cqi, 3.8147rem);
   }
   
 @font-face {
@@ -88,13 +97,13 @@
 
 .list_base li a {
   line-height: 4rem;
-  font-size: clamp(0.75rem,1rem,1.5rem);
+  font-size: var(--step--1);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 
 .list_1 li a {
-  padding-left: 1rem;
-  padding-right: 1rem;
 
   text-align: center;
   text-decoration: none;
@@ -107,8 +116,8 @@
 .list_1 li a:hover {
   color: white;
   background-color: rgb(44, 78, 78);
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 
@@ -131,8 +140,6 @@
 }
 
 .list_2 li a {
-  padding-left: 1rem;
-  padding-right: 1rem;
 
   text-align: center;
   text-decoration: none;
@@ -145,8 +152,8 @@
 .list_2 li a:hover {
   color: var(--amaranth-pink);
   background-color: white;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 
@@ -154,14 +161,16 @@
 .Colors {
   display: flex;
   justify-content: space-evenly;
-  width: 80%;
+  width: 90%;
   margin-inline: auto;
+  flex-wrap: wrap;
   margin-block: 2rem;
+  row-gap: 1rem;
 }
 
 .ColorBox {
   aspect-ratio: 1/1;
-  width: 20%;
+  width: min(35% - 0.5rem, var(--container-max, 15ch));
   border-style: solid;
   display: flex;
   align-items: center;
@@ -196,14 +205,15 @@
   width: min(80% - 0rem, var(--container-max, 100ch));
   margin-inline: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
 }
 
 .image_box img {
-  max-width: 40%;
-  width: auto;
+  width: min(80% - 2rem, var(--container-max, 15ch));
   height: auto;
+  flex-grow: 1;
 }
 
 
@@ -279,25 +289,26 @@
   
 }
 h1 {
-  font-size: clamp(1.5rem,2.5rem,4rem);
+  font-size: var(--step-4);
   color: var(--rose-pompadour);
 }
 h2 {
-  font-size: clamp(1.5rem,2rem,3.5rem);
+  font-size: var(--step-3);
   color: var(--rose-pompadour);
 }
 h3 {
-  font-size: clamp(1.25rem,1.75rem,3.25rem);
+  font-size: var(--step-2);
   color: var(--dark-slate-gray);
 }
 h4 {
-  font-size: clamp(1.25rem,1.5rem,3rem);
+  font-size: var(--step-1);
   color: var(--dark-slate-gray);
 }
 p {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--dark-slate-gray);
   margin-top: 1rem;
+  font-size: var(--step--1);
 }
 .text_pink {
   font-family: Arial, Helvetica, sans-serif;
@@ -369,7 +380,8 @@ p {
 }
 
 .text_box {
-  padding-top: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
   width: 80%;
   margin-inline: auto;
 }
