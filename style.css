@@ -381,6 +381,28 @@ p {
 }
 
 
+.Employees {
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: min(80% - 0rem, var(--container-max, 100ch));
+  justify-content: center;
+  gap: 1.5rem;
+  row-gap: 2rem;
+}
+
+.Employee_card {
+  width: 25%;
+  padding: 1rem;
+  background-color: rgb(235, 233, 233);
+
+  width: min(60% - 0rem, var(--container-max, 20ch));
+}
+
+.Employee_card img {
+  width: 100%;
+  border-radius: 2rem;
+}
 
 
 
