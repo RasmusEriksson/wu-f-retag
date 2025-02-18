@@ -325,28 +325,22 @@ p {
   padding-top: 4rem;
   padding-bottom: 6rem;
   background-color: white;
-
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 
 .infopage img {
-  width: 100%;
-  grid-area: 1 / 1 / 4 / 4;
+  width: inherit;
+  margin-top: 1rem;
 }
+
 
 .infoText {
-  grid-area: 1 / 1 / 4 / 4;
   display: flex;
-  width: min(80% - 0rem, var(--container-max, 100ch));
+  width: 100%;
   z-index: 3;
-}
-
-.infopage .empty2 {
-  grid-area: 1 / 1 / 4 / 4;
-  background-color: rgb(255, 255, 255);
-  opacity: 75%;
-  z-index: 2;
 }
 
 .infoText .container {
