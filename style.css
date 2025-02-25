@@ -216,6 +216,7 @@
   width: min(80% - 2rem, var(--container-max, 15ch));
   height: auto;
   flex-grow: 1;
+  object-fit: cover;
 }
 
 
@@ -386,7 +387,7 @@ p {
 
 
 .pink_box {
-  background-color: var(--dark-rose);
+  background-color: var(--rose-pompadour);
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
@@ -413,7 +414,8 @@ p {
   background-color: white;
   border-radius: 1rem;
 
-  width: min(60% - 0rem, var(--container-max, 20ch));
+  width: min(80% - 0rem, var(--container-max, 20ch));
+  
 }
 
 .Employee_card img {
@@ -424,6 +426,25 @@ p {
 }
 
 
+.location_box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: min(90% - 0rem, var(--container-max, 80ch));
+  margin-inline: auto;
+
+  justify-content: space-around;
+}
+
+.location_box img {
+  width: min(65% - 0rem, var(--container-max, 25ch));
+}
+
+.adapt {
+  width: min(50% - 0rem, var(--container-max, 80ch));
+  flex-grow: 0.7;
+}
 
 
 .footer {
